@@ -12,7 +12,7 @@ type RootState = StateFromReducersMapObject<typeof reducerMap>
 const rootReducer = combineReducers(reducerMap)
 
 function* rootSaga() {
-  yield all([watchProductsSaga])
+  yield all([watchProductsSaga()])
 }
 
 export { RootState, rootReducer, rootSaga }

@@ -16,6 +16,14 @@ class ProductsModel {
   constructProductMap() {
     this.productMap = this.products.reduce((map, product) => ({ ...map, [product.id]: product }), {})
   }
+
+  getProducts() {
+    return this.products
+  }
+
+  getProductsById(id: Product['id']) {
+    return this.productMap[id]
+  }
 }
 
 export default ProductsModel
