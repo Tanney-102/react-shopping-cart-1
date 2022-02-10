@@ -1,13 +1,14 @@
 import styled from 'styled-components'
+import { PRODUCT_LIST_PAGE_LAYOUT } from '../../constants/layout'
 
 const Container = styled.div`
   max-width: 1320px;
   margin: 0 auto;
-  padding: 3.75rem 1.5rem 0 1.5rem;
+  padding: ${PRODUCT_LIST_PAGE_LAYOUT.PADDING_TOP}px 24px 0;
   display: grid;
   justify-content: center;
   grid-template-columns: repeat(4, 282px);
-  gap: 48px;
+  gap: ${PRODUCT_LIST_PAGE_LAYOUT.PRODUCT_LIST_ITEM_GRID_GAP}px;
 
   @media (max-width: 1300px) {
     grid-template-columns: repeat(3, 282px);

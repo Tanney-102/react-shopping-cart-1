@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import GNB from './components/GNB'
 import PATH from './constants/path'
+import { ProductListItemCountContextProvider } from './contexts/ProductListItemCountContext'
 import ProductListPage from './pages/ProductListPage'
 
 const App = () => {
@@ -8,7 +9,14 @@ const App = () => {
     <BrowserRouter>
       <GNB />
       <Routes>
-        <Route path={PATH.HOME} element={<ProductListPage />} />
+        <Route
+          path={PATH.HOME}
+          element={
+            <ProductListItemCountContextProvider>
+              <ProductListPage />
+            </ProductListItemCountContextProvider>
+          }
+        />
         <Route path={PATH.PRODUCT_DETAIL} element={<div>product-detail</div>} />
         <Route path={PATH.CART} element={<div>cart</div>} />
         <Route path={PATH.PAYMENTS} element={<div>product</div>} />

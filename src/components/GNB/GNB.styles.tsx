@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { GNB_HEIGHT } from '../../constants/layout'
 
 const Container = styled.header`
   background-color: ${({ theme }) => theme.color.primary};
-  height: 5rem;
+  height: ${GNB_HEIGHT}px;
   box-shadow: 2px 1px 2px 1px rgba(0, 0, 0, 0.2);
 `
 
