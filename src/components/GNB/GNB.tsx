@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+
 import PATH from '../../constants/path'
 import Styled from './GNB.styles'
 

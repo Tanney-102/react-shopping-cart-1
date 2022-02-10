@@ -1,8 +1,8 @@
-import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
-import { Product } from '../../@types/products'
 import { makeProductSelectorById } from '../../redux/products/productsSelector'
+import { Product } from '../../@types/products'
 import SquareImage from '../SquareImage'
 import Styled from './ProductItem.styles'
 

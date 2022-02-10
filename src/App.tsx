@@ -1,8 +1,9 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import GNB from './components/GNB'
-import PATH from './constants/path'
+
 import { ProductListItemCountContextProvider } from './contexts/ProductListItemCountContext'
 import ProductListPage from './pages/ProductListPage'
+import GNB from './components/GNB'
+import PATH from './constants/path'
 
 const App = () => {
   return (

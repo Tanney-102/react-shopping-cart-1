@@ -1,14 +1,14 @@
 import { useContext, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import InfiniteScroll from '../../components/InfiniteScroll/InfiniteScroll'
 
-import ProductItem from '../../components/ProductItem'
-import { GNB_HEIGHT, PRODUCT_LIST_PAGE_LAYOUT } from '../../constants/layout'
-import PATH from '../../constants/path'
-import ProductListItemCountContext from '../../contexts/ProductListItemCountContext'
 import productsAction from '../../redux/products/productsAction'
 import { productsSelector } from '../../redux/products/productsSelector'
+import ProductListItemCountContext from '../../contexts/ProductListItemCountContext'
+import InfiniteScroll from '../../components/InfiniteScroll/InfiniteScroll'
+import ProductItem from '../../components/ProductItem'
+import { GNB_HEIGHT } from '../../constants/layout'
+import PATH from '../../constants/path'
 import Styled from './ProductListPage.styles'
 
 const ProductListPage = () => {
