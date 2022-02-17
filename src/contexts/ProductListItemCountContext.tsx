@@ -8,7 +8,7 @@ const getRowCountOfGridItem = () => {
     PRODUCT_LIST_PAGE_LAYOUT.PRODUCT_LIST_ITEM_HEIGHT + PRODUCT_LIST_PAGE_LAYOUT.PRODUCT_LIST_ITEM_GRID_GAP
   const containerHeight = window.innerHeight - (GNB_HEIGHT + PRODUCT_LIST_PAGE_LAYOUT.PADDING_TOP)
 
-  return Math.ceil(containerHeight / productListItemHeight)
+  return Math.ceil(containerHeight / productListItemHeight) + 1
 }
 
 const getGridColumnCount = () => {
